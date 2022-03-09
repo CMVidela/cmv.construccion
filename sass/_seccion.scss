@@ -1,0 +1,22 @@
+#main{
+ display: grid;
+ grid-template-columns: 1fr 2fr;
+
+  .banner{
+   height: auto;
+
+    .video_youtube{
+      padding: 5%;
+
+
+      
+      .aside{
+       padding: 5%;
+      }
+    }
+  }
+
+}
+
+     
+ 
