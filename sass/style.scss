@@ -1,15 +1,15 @@
 
 @import "seccion";
+@import "footer";
+@import "header";
 
-
-*{
+* {
     padding: 0%;
-    margin: 0%;
-}
+    margin: 0%; }  
 
 body{
     display: grid;
-    grid-template-rows: 0.5fr 4fr 2fr 0.5fr;
+    grid-template-rows: 0.5fr 4fr 4fr 1fr;
 }
 
 .banner img{
@@ -21,6 +21,10 @@ body{
 
 
 
-footer{
-    background-color: black;
+ul{
+    display: flex;
+    flex-direction: row;
+    flex: 1;
 }
+
+

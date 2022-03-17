@@ -1,0 +1,29 @@
+ 
+ footer{
+    background-color: black 
+  }
+    .footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 10px;
+      
+        
+    
+    
+    }
+       
+        $redes:(
+            twitter: #55acee,
+            faceboock: #3a5795,
+            instagram: #c25e30,
+        );
+    
+        @each $red, $color in $redes{
+            .btn--#{$red}{
+                background-color: $color;
+                margin: 10px;
+            }
+        }
+    
+  

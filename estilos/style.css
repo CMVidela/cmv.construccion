@@ -1,12 +1,41 @@
 #main {
   display: grid;
-  grid-template-columns: 1fr 2fr; }
-  #main .banner {
-    height: auto; }
-    #main .banner .video_youtube {
-      padding: 5%; }
-      #main .banner .video_youtube .aside {
-        padding: 5%; }
+  grid-template-columns: 1fr 2fr;
+  background-color: aqua; }
+
+.banner {
+  height: auto;
+  margin: 0.5px; }
+
+.video_youtube {
+  padding: 5%; }
+
+.aside {
+  flex-direction: column; }
+
+.parrafo {
+  color: red; }
+
+footer {
+  background-color: black; }
+
+.footer, .aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px; }
+
+.btn--twitter {
+  background-color: #55acee;
+  margin: 10px; }
+
+.btn--faceboock {
+  background-color: #3a5795;
+  margin: 10px; }
+
+.btn--instagram {
+  background-color: #c25e30;
+  margin: 10px; }
 
 * {
   padding: 0%;
@@ -14,12 +43,14 @@
 
 body {
   display: grid;
-  grid-template-rows: 0.5fr 4fr 2fr 0.5fr; }
+  grid-template-rows: 0.5fr 4fr 4fr 1fr; }
 
 .banner img {
   background-color: dimgrey;
   height: 100%;
   width: 100%; }
 
-footer {
-  background-color: black; }
+ul {
+  display: flex;
+  flex-direction: row;
+  flex: 1; }
