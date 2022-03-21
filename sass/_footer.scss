@@ -1,12 +1,14 @@
  
  footer{
     background-color: black 
+    
   }
     .footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        margin: 10px;
+        margin: 0.1%;
+        grid-area: footer;
       
         
     

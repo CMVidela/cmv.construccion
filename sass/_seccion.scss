@@ -1,24 +1,27 @@
-#main{
- display: grid;
- grid-template-columns: 1fr 2fr;
- background-color: aqua;
+.main{
+  background-color: aqua;
  
 }
 .banner{
   height: auto;
-  margin: 0.5px;
+  margin: auto;
+  grid-area: imagen;
  }
 
 .video_youtube{
-  padding: 5%;
+  grid-area: video;
+
 
 }
 
+
 .aside{
- @extend .footer;
- flex-direction: column;
-  
-  
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+   
  }   
 
  @mixin parrafo ($color) {
@@ -27,7 +30,7 @@
    
  }
  .parrafo{
-   @include parrafo(red )
+   @include parrafo(red)
 
  }
 

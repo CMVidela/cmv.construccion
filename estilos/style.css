@@ -1,17 +1,20 @@
-#main {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
+.main {
   background-color: aqua; }
 
 .banner {
   height: auto;
-  margin: 0.5px; }
+  margin: auto;
+  grid-area: imagen; }
 
 .video_youtube {
-  padding: 5%; }
+  grid-area: video; }
 
 .aside {
-  flex-direction: column; }
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; }
 
 .parrafo {
   color: red; }
@@ -19,11 +22,12 @@
 footer {
   background-color: black; }
 
-.footer, .aside {
+.footer {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 10px; }
+  margin: 0.1%;
+  grid-area: footer; }
 
 .btn--twitter {
   background-color: #55acee;
@@ -37,13 +41,33 @@ footer {
   background-color: #c25e30;
   margin: 10px; }
 
+.nav-item {
+  display: flex; }
+
 * {
   padding: 0%;
   margin: 0%; }
 
-body {
+.body {
   display: grid;
-  grid-template-rows: 0.5fr 4fr 4fr 1fr; }
+  gap: 0.5px;
+  grid-template-areas: "header" "imagen" "aside" "servicios" "footer"; }
+
+@media (min-width: 570px) {
+  body {
+    display: grid;
+    gap: 0.5px;
+    grid-template-rows: 0.5fr 4fr 2fr 2fr 0.5fr; } }
+
+@media (min-width: 570px) {
+  .main {
+    display: flex;
+    flex-direction: row; } }
+
+@media (min-width: 570px) {
+  .servicios {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr; } }
 
 .banner img {
   background-color: dimgrey;
@@ -54,3 +78,23 @@ ul {
   display: flex;
   flex-direction: row;
   flex: 1; }
+
+.seccion {
+  background-color: dimgrey;
+  margin: 0.1%; }
+
+.div {
+  background-color: darkolivegreen;
+  margin: 0.1%; }
+
+.servicios {
+  grid-area: servicios;
+  background-color: orange; }
+
+.div_serv {
+  background-color: white;
+  margin: 10%;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
