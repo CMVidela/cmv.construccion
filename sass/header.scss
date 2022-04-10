@@ -3,3 +3,13 @@
     display: flex
     
   }
+
+  a.nav-link.active {
+    background-color: white !important;
+}
+
+a.nav-link.active {
+  color: black !important;
+  font-family: 'Montserrat', sans-serif;
+  text-transform: uppercase;
+}

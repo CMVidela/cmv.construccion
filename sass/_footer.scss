@@ -1,6 +1,6 @@
  
  footer{
-    background-color: black 
+    background-color: #162b4e;
     
   }
     .footer {
@@ -10,10 +10,12 @@
         margin: 0.1%;
         grid-area: footer;
       
-        
-    
-    
-    }
+ }
+
+ .footer div{
+     width: 40px;
+     margin-right: 25px;
+ }
        
         $redes:(
             twitter: #55acee,
